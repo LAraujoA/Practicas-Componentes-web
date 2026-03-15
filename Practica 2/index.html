@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Practica 2 Vue</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://unpkg.com/vue@3"></script>
+</head>
+
+<body>
+
+<div id="app">
+
+    <h2>Ejercicio 1 - Saludo</h2>
+
+    <input type="text" v-model="nombreUsuario" placeholder="Ingrese su nombre">
+
+    <button @click="saludar">Saludar</button>
+
+    <p>{{ mensaje }}</p>
+
+
+    <h2>Ejercicio 2 - Suscripción</h2>
+
+    <form @submit.prevent="registrarCorreo">
+
+        <input type="email" v-model="correoUsuario" placeholder="Ingrese su correo">
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+    <p>{{ mensajeEnvio }}</p>
+
+</div>
+
+
+<script>
+
+Vue.createApp({
+
+    data(){
+        return{
+            nombreUsuario: '',
+            mensaje: '',
+            correoUsuario: '',
+            mensajeEnvio: ''
+        }
+    },
+
+    methods:{
+
+        saludar(){
+
+            if(this.nombreUsuario.trim() !== ''){
+
+                this.mensaje = `Hola ${this.nombreUsuario} Ejercicio DOM 1`;
+                this.nombreUsuario = '';
+
+            }else{
+
+                this.mensaje = "Coloque un nombre correcto!";
+            }
+
+        },
+
+        registrarCorreo(){
+
+            this.mensajeEnvio = `Gracias, hemos registrado su correo: ${this.correoUsuario}`;
+            this.correoUsuario = '';
+
+        }
+
+    }
+
+}).mount('#app')
+
+</script>
+
+</body>
+</html>
