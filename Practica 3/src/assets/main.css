@@ -1,7 +1,7 @@
 @import './base.css';
 
 body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: linear-gradient(90deg, #090F0A, #171585, #090F0A);
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -42,7 +42,7 @@ a:hover {
 /* TITULO */
 h2 {
   margin-bottom: 20px;
-  color: #00ffcc;
+  color: #ffffff;
 }
 
 /* INPUTS */
@@ -52,7 +52,7 @@ input {
   margin: 10px 0;
   border: none;
   border-radius: 8px;
-  background: #2c2c3e;
+  background: #37373a;
   color: white;
   font-size: 14px;
 }
@@ -63,15 +63,15 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
-  background: #00ffcc;
-  color: black;
+  background: #3c38fb;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
 
 button:hover {
-  background: #00ccaa;
+  background: #171585;
   transform: scale(1.05);
 }
 

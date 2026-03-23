@@ -35,7 +35,7 @@ const total = computed(() =>{
 </script>
 
 <template>
-<div class="cointainer">
+<div class="container">
   <h2>Carrito </h2>
   <input v-model="producto" type="text"  placeholder="Producto">
   <input v-model="precio" type="number" placeholder="Precio">
@@ -43,8 +43,8 @@ const total = computed(() =>{
 
 
   <ul>
-    <li v-for="(item, index) in  carrito" :key="ïndex">{{ item.nombre }} - ${{ item.precio }}
-        <button class="eliminar" @click="eliminarProducto(index)"></button>
+    <li v-for="(item, index) in  carrito" :key="index">{{ item.nombre }} - ${{ item.precio }}
+        <button class="eliminar" @click="eliminarProducto(index)">Eliminar</button>
     </li>
   </ul>
 
