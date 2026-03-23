@@ -1,0 +1,134 @@
+@import './base.css';
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* CONTENEDOR PRINCIPAL */
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+/* LINKS */
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+a:hover {
+  background-color: hsla(160, 100%, 37%, 0.2);
+}
+
+/* 🔥 ESTILO DEL CARRITO (SIEMPRE ACTIVO) */
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #1e1e2f;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  text-align: center;
+  color: white;
+}
+
+/* TITULO */
+h2 {
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+/* INPUTS */
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #2c2c3e;
+  color: white;
+  font-size: 14px;
+}
+
+/* Los Botones*/
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #00ffcc;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00ccaa;
+  transform: scale(1.05);
+}
+
+/* Las Listas*/
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+li {
+  background: #2c2c3e;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Boton de Eliminar */
+.eliminar {
+  background: red;
+  color: white;
+  padding: 5px 10px;
+}
+
+.eliminar:hover {
+  background: darkred;
+}
+
+
+.total {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.verde {
+  color: #00ff88;
+}
+
+.rojo {
+  color: red;
+}
+
+
+.vacio {
+  margin-top: 15px;
+  color: #aaa;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
